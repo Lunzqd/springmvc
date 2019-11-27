@@ -1,0 +1,26 @@
+server:
+    tomcat:
+        uri-encoding: UTF-8
+    # web端口
+    port: 8888
+    servlet:
+      # 访问基础路径
+      context-path: /mvc-demo
+---
+spring:
+  # 数据源配置
+  datasource:
+    url: jdbc:mysql://49.233.146.198:3306/test_job?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    username: root
+    password: 123456
+    driverClassName: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+---
+# mybatis
+mybatis:
+  # 注意通配符的配置
+  mapper-locations: classpath*:/dao/**/**.xml
+  # 实体扫描，mybatis 驼峰命名映射
+  typeAliasesPackage: com.lunz.course.entity.domain
+
