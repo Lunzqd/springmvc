@@ -61,7 +61,7 @@ then 最终结果
 
 - 结果部分，即`RHS`，这里可以写普通`java`代码，即当前规则条件满足后执行的操作，可以直接调用`Fact`对象的方法来操作应用。
 
-![drools-01](./pic-annex/drools-01.jpg)
+![drools-01](./pic/drools-01.jpg)
 
 `drl`文件简单编写：
 
